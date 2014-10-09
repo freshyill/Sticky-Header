@@ -6,7 +6,7 @@
     "Chris Coleman <freshyill@gmail.com>"
   ],
   "description": "Display a sticky header element after scrolling",
-  "main": "sticky.js",
+  "main": "jquery.stickyHeader.js",
   "keywords": [
     "jquery",
     "sticky",
