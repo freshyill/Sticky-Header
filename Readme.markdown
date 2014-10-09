@@ -2,6 +2,8 @@
 
 A simple jQuery plugin to handle a sticky header that appears after you scroll a bit.
 
+Check out a [demo](http://freshyill.github.io/Sticky-Header/).
+
 ## How it works
 
     $(document).ready( function() {
@@ -11,7 +13,12 @@ A simple jQuery plugin to handle a sticky header that appears after you scroll a
 ## Using Options
 
     $(document).ready( function() {
-      $('.element').stickyHeader({ triggerElement: 'element', hiddenClass: 'class', scrollOffset: number, scrollInterval: number });
+      $('.element').stickyHeader({
+        triggerElement: 'element',
+        hiddenClass: 'class',
+        scrollOffset: number,
+        scrollInterval: number
+      });
     });
 
 ## Options
