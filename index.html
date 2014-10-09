@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Sticky-header by freshyill</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Sticky-header</h1>
+        <h2>jQuery plugin for a sticky element</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/freshyill/Sticky-Header/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/freshyill/Sticky-Header/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/freshyill/Sticky-Header" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="sticky-header" class="anchor" href="#sticky-header"><span class="octicon octicon-link"></span></a>Sticky Header</h1>
+
+<p>A simple jQuery plugin to handle a sticky header that appears after you scroll a bit.</p>
+
+<h2>
+<a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How it works</h2>
+
+<pre><code>$(document).ready( function() {
+  $('.element').stickyHeader(options);
+});
+</code></pre>
+
+<h2>
+<a name="using-options" class="anchor" href="#using-options"><span class="octicon octicon-link"></span></a>Using Options</h2>
+
+<pre><code>$(document).ready( function() {
+  $('.element').stickyHeader({ triggerElement: 'element', hiddenClass: 'class', scrollOffset: number, scrollInterval: number });
+});
+</code></pre>
+
+<h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<h3>
+<a name="triggerelement" class="anchor" href="#triggerelement"><span class="octicon octicon-link"></span></a><code>triggerElement</code>
+</h3>
+
+<p>The element that triggers the sticky header to appear when it exits the top of the viewport. Default is <code>.contentbody</code> but you probably want to change it.</p>
+
+<h3>
+<a name="hiddenclass" class="anchor" href="#hiddenclass"><span class="octicon octicon-link"></span></a><code>hiddenClass</code>
+</h3>
+
+<p>Class that will be added/removed to/from your sticky header. Default is <code>is-hidden</code>,</p>
+
+<h3>
+<a name="scrolloffset" class="anchor" href="#scrolloffset"><span class="octicon octicon-link"></span></a><code>scrollOffset</code>
+</h3>
+
+<p>Specify an integer. Negative values will delay the appearance of the sticky header relative to the trigger element. Positive values will make it appear sooner. Default is <code>null</code>.</p>
+
+<h3>
+<a name="scrollinterval" class="anchor" href="#scrollinterval"><span class="octicon octicon-link"></span></a><code>scrollInterval</code>
+</h3>
+
+<p>How often to check for scroll activity, measured in milliseconds. Higher values will let you delay appearance of the sticky header. Lower values will kill performance. Default is <code>250</code>.</p>
+
+<h2>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>Todo</h2>
+
+<ul>
+<li>Standard Github stuff like a demo, bower.json, etc.</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
