@@ -1,0 +1,54 @@
+/* You'll need basic styles resembling these. */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  -webkit-transition: .2s -webkit-transform 0;
+          transition: .2s transform 0;
+}
+
+.header.is-hidden {
+  -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+
+/* These styles are just for the demo */
+
+.header {
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  background: rgba(255, 0, 255, 1);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+.contentheader {
+  background: rgba(255, 153, 0, 0.25);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contentbody {
+  padding: 1rem;
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+.content {
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.wrap {
+  max-width: 500px;
+  margin: 0 auto;
+}
