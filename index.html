@@ -4,6 +4,7 @@
 
   <head>
     <title>Sticky Header Demo</title>
+    <link type="text/css" rel="stylesheet" href="prism.css">
     <link type="text/css" rel="stylesheet" href="style.css">
   </head>
 
@@ -14,46 +15,48 @@
 
       <h1>Sticky Header</h1>
 
-      <article class="article">
+<article class="article">
 
         <p>A simple jQuery plugin to handle a sticky header that appears after you scroll a bit.</p>
 
         <h2>How it works</h2>
 
-        <pre><code>$(document).ready( function() {
-          $(&#39;.element&#39;).stickyHeader(options);
-        });
-        </code></pre>
+        <pre class="language-javascript"><code class="language-javascript">$(document).ready( function() {
+  $(&#39;.element&#39;).stickyHeader(options);
+});</code></pre>
 
         <h2>Using Options</h2>
 
-        <pre><code>$(document).ready( function() {
+        <pre class="language-javascript"><code class="language-javascript">$(document).ready( function() {
   $(&#39;.element&#39;).stickyHeader({
     triggerElement: &#39;element&#39;,
     hiddenClass: &#39;class&#39;,
     scrollOffset: number,
     scrollInterval: number
   });
-});
-        </code></pre>
+});</code></pre>
 
         <h2>Options</h2>
 
-        <h3><code>triggerElement</code></h3>
+        <h3><code class="language-javascript">triggerElement</code></h3>
 
-        <p>The element that triggers the sticky header to appear when it exits the top of the viewport. Default is <code>.contentbody</code> but you probably want         to change it.</p>
+        <p>The element that triggers the sticky header to appear when it exits the top of the viewport. Default is <code class="language-javascript">.contentbody</code> but you probably want         to change it.</p>
 
-        <h3><code>hiddenClass</code></h3>
+        <h3><code class="language-javascript">hiddenClass</code></h3>
 
-        <p>Class that will be added/removed to/from your sticky header. Default is <code>is-hidden</code>,</p>
+        <p>Class that will be added/removed to/from your sticky header. Default is <code class="language-javascript">is-hidden</code>,</p>
 
-        <h3><code>scrollOffset</code></h3>
+        <h3><code class="language-javascript">scrollOffset</code></h3>
 
-        <p>Specify an integer. Negative values will delay the appearance of the sticky header relative to the trigger element. Positive values will make it appear         sooner. Default is <code>null</code>.</p>
+        <p>Specify an integer. Negative values will delay the appearance of the sticky header relative to the trigger element. Positive values will make it appear         sooner. Default is <code class="language-javascript">null</code>.</p>
 
-        <h3><code>scrollInterval</code></h3>
+        <h3><code class="language-javascript">scrollInterval</code></h3>
 
-        <p>How often to check for scroll activity, measured in milliseconds. Higher values will let you delay appearance of the sticky header. Lower values will         kill performance. Default is <code>250</code>.</p>
+        <p>How often to check for scroll activity, measured in milliseconds. Higher values will let you delay appearance of the sticky header. Lower values will         kill performance. Default is <code class="language-javascript">250</code>.</p>
+
+        <hr>
+
+        <h2>And here's some dummy content to make this page longer</h2>
 
         <p>Bacon ipsum dolor sit amet ham ground round pork loin fatback jerky tail swine tri-tip tenderloin shankle. Pork jerky andouille t-bone, ground round chuck landjaeger tongue swine strip steak. Meatball sirloin jerky chuck boudin beef ribs rump brisket leberkas ham pancetta bacon kevin biltong pork chop. Short ribs sirloin ribeye ball tip short loin ham hock meatloaf meatball. Beef ribs flank tenderloin filet mignon, ball tip pork belly chuck corned beef fatback. Cow t-bone shoulder biltong drumstick venison corned beef kevin. Fatback drumstick hamburger chuck kevin frankfurter.</p>
         <p>Venison ground round ball tip capicola corned beef, filet mignon salami kielbasa bresaola spare ribs short ribs prosciutto pastrami. Corned beef doner flank, meatball salami beef ribs kielbasa kevin hamburger biltong rump. Ground round hamburger short loin pork belly leberkas, tenderloin rump swine shankle ham corned beef pork meatball pork loin chuck. Chuck drumstick sirloin strip steak pork short loin kevin meatball kielbasa salami tail shankle. Salami kevin hamburger shank, ribeye spare ribs venison fatback capicola boudin kielbasa prosciutto beef ribs shankle flank.</p>
@@ -70,6 +73,7 @@
 
     </div>
 
+    <script src="prism.js"></script>
     <script src="jquery.min.js"></script>
     <script src="sticky.js"></script>
     <script>
